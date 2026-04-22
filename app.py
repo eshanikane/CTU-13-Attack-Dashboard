@@ -314,7 +314,6 @@ def build_insights_figure(scored: pd.DataFrame, importance: pd.Series, numeric_c
 
 def main() -> None:
     st.markdown("## CTU-13 Attack Traffic Dashboard")
-    st.caption(f"Using local file: {DATA_FILE}")
 
     if not DATA_FILE.exists():
         st.error(f"Dataset file not found: {DATA_FILE}")
