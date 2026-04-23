@@ -383,7 +383,7 @@ def main() -> None:
     if metrics["rf_accuracy"] is not None:
         m1.metric("Random Forest Accuracy", f"{metrics['rf_accuracy']:.4f}")
     else:
-        m1.metric("Model Mode", "IsolationForest")
+        m1.metric("Model Mode", "Random Forest/ XGBoost")
 
     if metrics["xgb_accuracy"] is not None:
         m2.metric("XGBoost Accuracy", f"{metrics['xgb_accuracy']:.4f}")
